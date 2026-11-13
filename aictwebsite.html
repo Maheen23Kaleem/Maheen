@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UNIVERSITY WEBSITE</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+            margin: 0;
+        }
+
+        header {
+            background-color: #D2B48C;
+            text-align: center;
+            padding: 25px;
+            color: #5C4033;
+        }
+
+        nav {
+            background-color:antiquewhite;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav a {
+            color: #5C4033;
+            margin: 15px;
+        }
+
+        h2 {
+            color: #B8860B;
+            text-align: center;
+        }
+
+        section {
+            background-color:lightgoldenrodyellow;
+            padding: 20px;
+            margin: 15px;
+            color: #5C4033;
+        }
+
+        li {
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #8B5E3C;
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #E6C9A8;
+        }
+
+        img {
+            width: 300px;
+            margin: 15px;
+            height: 150px;
+        }
+
+        button {
+            background-color: #D2B48C;
+            color: #5C4033;
+            padding: 15px;
+            border: 1px solid #8B5E3C;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #D2B48C;
+            color: #5C4033;
+            text-align: right;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="home">
+    <h1>Saarland University</h1>
+    <p>Willkommen</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#departments">Departments</a>
+    <a href="#programs">Programs</a>
+    <a href="#admission">Admission</a>
+</nav>
+
+<section>
+    <h2>Home</h2>
+
+    <p>
+        Welcome to Saarland University
+        (Universität des Saarlandes).
+        It is a public research university located
+        in Saarbrücken and Homburg, Germany.
+    </p>
+
+    <button onclick="welcome()">Click Here</button>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+
+    <p>
+        Our university is a public research university
+        located in Saarbrücken and Homburg
+        in the state of Saarland, Germany.
+    </p>
+
+    <img src="imgentrance.jpeg" alt="University Entrance">
+</section>
+
+<section id="departments">
+    <h2>Our Departments</h2>
+    <p>Saarland University (Universität des Saarlandes) is structured into 
+        six core faculties spanning major scientific disciplines. 
+        Each faculty houses specific departments, institutes, and academic programs.</p>
+
+    <ul>
+        <li>Computer Science</li>
+        <li>Business Administration</li>
+        <li>Electrical Engineering</li>
+        <li>Mathematics</li>
+        <li>English</li>
+        
+    </ul>
+</section>
+
+<section id="programs">
+    <h2>Academic Programs</h2>
+   <p>• Degree Levels: Offers Bachelor of Arts, Bachelor of Science, Master of Arts,
+     Master of Science, Master of Education (M.Ed.), state examinations, and doctoral pathways.
+    Instruction Languages: Programs are taught in German, English, French, 
+    bilingual/multilingual combinations (such as Franco-German tracks).
+     Tuition: Public university system with no general tuition fees; students only
+     pay a small semester student services/social contribution fee.</p>
+    <table>
+        <tr>
+            <th>Program</th>
+            <th>Duration</th>
+            <th>Degree</th>
+        </tr>
+
+        <tr>
+            <td>Computer Science</td>
+            <td>4 Years</td>
+            <td>BSCS</td>
+        </tr>
+
+        <tr>
+            <td>Business</td>
+            <td>4 Years</td>
+            <td>BBA</td>
+        </tr>
+
+        <tr>
+            <td>Electrical Engineering</td>
+            <td>4 Years</td>
+            <td>BS Electrical Engineering</td>
+        </tr>
+
+        <tr>
+            <td>Mathematics</td>
+            <td>4 Years</td>
+            <td>BS Mathematics</td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td>2 Years</td>
+            <td>BS English</td>
+        </tr>
+    </table>
+</section>
+
+<section id="admission">
+    <h2>Admission Form</h2>
+    <p> It is one of the top locations for computer science in Europe,
+         frequently ranked among the best in Germany.
+        The campus hosts multiple Max Planck Institutes
+         (Max Planck Institute for Informatics and Max Planck Institute for Software Systems),
+          the German Research Center for Artificial Intelligence (DFKI), Fraunhofer institutes, 
+          and the Center for Bioinformatics within walking distance</p>
+          <img src="imgdepartment.jpeg" alt="University Department">
+    <form>
+        Name:<br>
+        <input type="text" placeholder="Enter your name" required>
+        <br><br>
+
+        Email:<br>
+        <input type="email" placeholder="Enter your email" required>
+        <br><br>
+
+        Contact Number:<br>
+        <input type="tel" placeholder="Enter phone number" required>
+        <br><br>
+
+        Gender:<br>
+        <input type="radio" name="gender" required> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Alien
+        <br><br>
+
+        Select Program:<br>
+        <select required>
+            <option value="">Select Program</option>
+            <option>Computer Science</option>
+            <option>Business Administration</option>
+            <option>Electrical Engineering</option>
+            <option>Mathematics</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>"Waiting for u there"</p>
+</footer>
+
+<script>
+    function welcome() {
+        alert("Welcome to Saarland University!");
+    }
+    function submitForm() {
+        alert("Your admission form has been submitted successfully!");
+    }
+</script>
+
+</body>
+</html>
